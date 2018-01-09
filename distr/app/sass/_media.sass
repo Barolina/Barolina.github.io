@@ -1,0 +1,971 @@
+// @import "vars"
+
+// /*==========  Desktop First  ==========*/
+
+
+// /* Large Devices, Wide Screens */
+// @media only screen and (max-width : 1200px)
+// 	/**/	
+// 	.telefon
+// 		margin-top: 18vh
+// 		font-size: 32px
+// 	.menu-toggle
+// 		visibility: hidden
+// 	.menu
+// 		visibility: visible
+// 	.fix-header
+// 		height: 80px
+
+
+// /* Medium Devices, Desktops */
+// @media only screen and (max-width : 992px)
+// 	/**/
+// 	.telefon
+// 		margin-top: 22vh
+// 		font-size: 32px
+// 	.menu-toggle
+// 		visibility: visible
+// 		text-align: left
+// 		grid-column-start: 2
+// 		// height: 200px
+// 		// max-width: 200px
+// 		justify-items: start
+		
+// 	.menu
+// 		visibility: visible
+// 	.fix-header
+// 		// grid-template-columns: 1fr 1fr 100pxgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+// 		grid-template-columns: 1fr 150px
+// 		grid-auto-rows: auto
+// 		grid-gap: 0px
+// 		height: 80px
+// 		img
+// 			height:	10em
+// 			width: 20em 
+// 			align-content: left
+// 			text-align: center
+// 			// justify-content: center
+
+// /* Small Devices, Tablets */
+// @media only screen and (max-width : 768px)
+// 	/**/
+// 	.contentnt-producya
+// 		padding-left: 20px
+// 		padding-right: 20px
+// 		padding-top: 1vh
+// 		padding-bottom: 1vh
+// 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+// 	.menu-toggle
+// 		margin-top: -1em
+// 		visibility: visible
+// 		text-align: left
+// 		grid-column-start: 2
+// 		// height: 200px
+// 		// max-width: 200px
+// 		justify-items: start
+		
+// 	.menu
+// 		visibility: visible
+// 	.fix-header
+// 		height: 60px
+// 		// grid-template-columns: 1fr 1fr 100pxgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+// 		grid-template-columns: 1fr 150px
+// 		grid-auto-rows: auto
+// 		grid-gap: 0px
+// 		img
+// 			height:	10em
+// 			width: 20em 
+// 			align-content: left
+// 			text-align: center
+// 			// justify-content: center
+// 	.telefon
+// 		margin-top: 22vh
+// 		font-size: 28px
+// 	.header-content
+// 		margin-left: 2px
+//    		margin-right: 2px
+// 		height: 115%
+// 		width: 100%
+// 		overflow: auto
+// 		padding-top: 10px
+// 		margin-top: 12%
+// 		h1
+// 			font-size: 20px
+		
+// 		span
+// 			text-align: justify
+// 			font-size: 15px
+// 			padding: 0px 0px 1px
+// 	.contentnt-producya
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.company
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.blue-block
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.company
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.companion
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 		grid-template-columns: 250px
+// 		justify-items: center
+// 		justify-content: center
+// 		text-align: center
+// 		grid-gap: 3px
+// 	.map
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 0px
+// 		padding-right: 0px
+// 	.formsection
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 0px
+// 		padding-right: 0px
+// 		.footer
+// 			grid-template-columns: 320px
+// 			justify-content: center
+// 			// grid-template-rows: 100px 
+// 			form
+// 				grid-column: 1
+// 				grid-row: 3
+// 				width: 100%
+
+// /* Extra Small Devices, Phones */
+// @media only screen and (max-width : 480px)
+// 	/**/
+// 	.contentnt-producya
+// 		padding-left: 20px
+// 		padding-right: 20px
+// 		padding-top: 1vh
+// 		padding-bottom: 1vh
+// 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+// 	.menu-toggle
+// 		visibility: visible
+// 		text-align: right
+// 		grid-column: 2
+// 		justify-items: end
+// 		justify-content: right
+// 		margin-top: -8px
+// 		margin-right: 3em
+// 		// width: 200px
+// 	.menu
+// 		visibility: hidden
+// 	.fix-header
+// 		padding-left: 0
+// 		height: 50px
+// 		grid-template-columns: 1fr 80px
+// 		img
+// 			text-align: center
+// 			justify-content: center
+// 			justify-items: center
+// 			max-width: 210px
+// 			max-height: 130px
+// 			margin-left: -20px
+// 	.telefon
+// 		margin-top: 25vh
+// 		font-size: 28px
+// 	.header-content
+// 		margin-left: 2px
+//    		margin-right: 2px
+// 		height: 155%
+// 		width: 100%
+// 		overflow: auto
+// 		padding-top: 10px
+// 		margin-top: 12%
+// 		h1
+// 			font-size: 20px
+// 		span
+// 			text-align: justify
+// 			font-size: 15px
+// 			padding: 0px 0px 1px
+// 	.contentnt-producya
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.company
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.blue-block
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.company
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 	.companion
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 10px
+// 		padding-right: 10px
+// 		grid-template-columns: 250px
+// 		justify-items: center
+// 		justify-content: center
+// 		text-align: center
+// 		grid-gap: 3px
+// 	.map
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 0px
+// 		padding-right: 0px
+// 	.formsection
+// 		margin-left: 2px
+// 		margin-right: 2px
+// 		padding-left: 0px
+// 		padding-right: 0px
+// 		.footer
+// 			grid-template-columns: 320px
+// 			justify-content: center
+// 			// grid-template-rows: 100px 
+// 			form
+// 				grid-column: 1
+// 				grid-row: 3
+// 				width: 100%
+
+// /* Custom, iPhone Retina */
+// @media only screen and (max-width : 320px)
+// 	/**/
+	
+
+// /*==========  Mobile First  ==========*/
+
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width : 320px)
+// 	/**/
+// 	.contentnt-producya
+// 		padding-left: 20px
+// 		padding-right: 20px
+// 		padding-top: 1vh
+// 		padding-bottom: 1vh
+// 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+// 	.menu-toggle
+// 		visibility: visible
+// 	.menu
+// 		visibility: hidden
+// 	.fix-header
+// 		padding-left: 0
+// 		grid-template-columns: 1fr 80px
+// 		// height: 50px
+
+
+
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width : 480px)
+// 	/**/
+// 	.fix-header
+// 		height: 50px
+// 		// grid-template-columns: 1fr 1fr 100pxgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+// 		grid-template-columns: 1fr 150px
+// 		grid-auto-rows: auto
+// 		grid-gap: 0px
+// 		img
+// 			height:	8em
+// 			width: 15em 
+// 			align-content: left
+// 			text-align: center
+// 			// justify-content: center
+// 	.telefon
+// 		margin-top: 29vh
+// 		font-size: 28px
+// 	.header-content
+// 		margin-top: 0
+// /* Small Devices, Tablets */
+// @media only screen and (min-width : 768px)
+
+// 	.telefon
+// 		margin-top: 30vh
+// 		font-size: 28px
+// 	.companion
+// 		grid-template-columns: 20em 20em
+// 	.header-content
+// 		
+// 		background-size: cover
+// 		background-position: center
+// 		// margin-top: 17vh
+// 		z-index: 1
+// 		color: #ffffff
+// 		text-align: center
+// 		padding: 5px $gutter
+// 		margin-left: 20vh
+// 		margin-right: 10vh
+// 		height: 100%
+// 		overflow: auto
+// 		margin-top: 20%
+
+// 		h1
+// 			font-size: 24px
+// 			font-family: into-grid, sans-serif
+// 			font-weight: normal
+// 			line-height: 1.5
+// 			color: re#d
+// 		span
+// 			padding: 2vh 3vh 5vh
+
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width : 992px)
+// 	.menu-toggle
+// 		visibility: hidden
+// 	.menu
+// 		visibility: visible
+// 	// .toogle
+// 	// 	visibility: visible
+// 	// 	text-align: left
+// 	// 	grid-column-start: 2
+// 	// 	// height: 200px
+// 	// 	// max-width: 200px
+// 	// 	justify-items: start
+		
+// 	// .menu
+// 	// 	visibility: visible
+// 	.fix-header
+// 		height: 80px
+// 		grid-template-columns: 1fr 1fr
+// 		grid-auto-rows: auto
+// 		grid-gap: 0px
+// 		img
+// 			height:	12em
+// 			width: 20em 
+// 			align-content: left
+// 			text-align: center
+		
+// 	// 	// grid-template-columns: 1fr 1fr 100pxgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+// 	// 	// grid-template-columns: 1fr 150px
+// 	// 	grid-auto-rows: auto
+// 	// 	grid-gap: 0px
+// 	// 	img
+// 	// 		// height:	10em
+// 	// 		// width: 20em 
+// 	// 		align-content: left
+// 	// 		text-align: center
+// 	// 		// justify-content: center
+// 	.header-content
+// 		
+// 		background-size: cover
+// 		background-position: center
+// 		// margin-top: 17vh
+// 		z-index: 1
+// 		color: #eeeeee
+// 		text-align: center
+// 		padding: 5px $gutter
+// 		margin-left: 35vh
+// 		margin-right: 25vh
+// 		height: 105%
+// 		overflow: auto
+// 		margin-top: 20%
+
+// 		h1
+// 			font-size: 30px
+// 			font-family: into-grid, sans-serif
+// 			font-weight: normal
+// 			line-height: 1.5
+// 			// color: re#d
+// 		span
+// 			padding: 2vh 3vh 5vh
+
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width : 1200px) and (min-width : 992px) and (min-width : 768px)
+// 	.menu-toggle
+// 		visibility: hidden
+// 	.menu
+// 		visibility: visible
+// 		// grid-column-start: 2
+// 	.contentnt-producya
+// 		margin-top: -5vh
+// 		margin-left: 3em
+// 		margin-right: 3em
+// 		padding-left: 60px
+// 		padding-right: 60px
+// 		grid-template-columns: repeat(4, 1fr)
+// 	.telefon
+// 		margin-top: 23vh
+// 		font-size: 32px
+// 		z-index: 5
+// 	.main-header
+// 		
+// 		min-height: 100vh
+// 		background-size: cover
+// 		background-position: center
+// 		position: relative
+// 		grid-auto-rows: 200px
+// 		// justify-content: center
+// 		// align-content: stretch
+// 		// align-content: center
+// 		&::before
+// 			content: ''
+// 			position: absolute
+// 			top: 0
+// 			bottom: 0
+// 			right: 0
+// 			left: 0
+// 			background-color: $dark
+// 			opacity: 0.54
+		
+// 		display: grid    
+// 		grid-template-columns: 1fr
+// 	.fix-header
+// 		height: 80px
+// 		grid-template-columns: 1fr 1fr
+// 		grid-auto-rows: auto
+// 		grid-gap: 0px
+// 		img
+// 			height:	13em
+// 			width: 20em 
+// 			align-content: left
+// 			text-align: center
+// 	.header-content
+// 		
+// 		background-size: cover
+// 		background-position: center
+// 		// margin-top: 17vh
+// 		z-index: 1
+// 		color: #ffffff
+// 		text-align: center
+// 		padding: 5px $gutter
+// 		margin-left: 50vh
+// 		margin-right: 40vh
+// 		height: 110%
+// 		overflow: auto
+// 		margin-top: 15%
+
+// 		h1
+// 			font-size: 30px
+// 			font-family: into-grid, sans-serif
+// 			font-weight: normal
+// 			line-height: 1.5
+// 			color: red
+// 		span
+// 			padding: 2vh 5vh 5vh
+		
+
+
+// ----
+@media only screen  and (max-width : 768px) 
+	.contentnt-producya	
+		padding-left: 20px
+		padding-right: 20px
+		padding-top: 1vh
+		padding-bottom: 1vh
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+
+	.fixheader
+		background-color: $dark
+		display: grid
+		grid-template-columns: 1fr 0.7fr 0.7fr
+		// text-align: center
+		// justify-items: center
+		align-content: center
+		
+		height: 2.5em
+		// position: fixed
+		width: 100%
+		z-index: 400
+		// grid-row-gap: 1px
+		grid-template-rows: 4em
+		color: #eeeeee
+		img
+			//  
+			background-position: center center
+			background-size: cover
+			height: 8em
+			width: 14em
+			padding-left: 0
+			justify-content: center
+		.menu
+			visibility: hidden
+			grid-column: 2
+			z-index: 2
+			grid-template-rows: 80px
+			// height: 12vh
+			display: grid
+			grid-column: 2/-1
+			grid-row: 1
+			grid-template-columns: repeat(6, 1fr)
+			align-content: right
+			align-self: center
+			align-items: center
+			// justify-content: center
+			text-align: center
+			// grid-gap: 1px
+			padding-right: 10px
+			a   
+				
+				text-decoration: none
+				color: #eeeeee
+				&:hover
+					color: rgb(0, 161, 227)
+					// transform: translateX(10px)
+					// background: rgb(18, 53, 83)
+					// height: 40px
+					text-decoration-color: rgb(0, 161, 227)
+					text-decoration: underline
+					font-size: 20px
+					transition: all .3s ease-out
+					// text-decoration-line: 
+		.menu-toggle
+			visibility: visible
+			grid-column: 2
+			z-index: 200
+			grid-template-rows: 80px
+			// height: 12vh
+			display: grid
+			grid-column: 3
+			grid-row: 1
+			grid-template-columns: 1fr
+			// grid-template-columns: repeat(6, 1fr)
+			align-content: center
+			justify-items: end
+			padding-right: 5px
+			// align-self: center
+			// align-items: right
+			// justify-content: end
+			// text-align: right
+			// grid-gap: 1px
+			// padding-right: 10px
+			color: #eeeeee
+			
+			img
+				background-position: center center
+				background-size: cover
+				padding: 0
+				
+				align-items: center
+				align-self: center
+				color: #eeeeee
+				background-image: #eeeeee
+				filter: invert(1)
+				height: 50px
+				width: 50px
+			.toogle
+				visibility: hidden
+				position: absolute
+				top: 0px
+				z-index: 7
+				// grid-column-start: 1
+				// grid-row-start:  1
+				display: grid
+				grid-template-columns: 1fr
+				text-align: justify
+				right: 0
+				// width: 250px
+				padding: 2em
+				background-color: rgb(18, 53, 83)
+				// grid-template-rows: 3em
+
+	.telefon
+		margin-top: 3.3em
+		font-size: 28px
+		// end
+	.cont
+		h1
+			
+			font-size: 1.6em
+			@media only screen   and (max-width : 480px) 
+				font-size: 1.2em
+			font-family: into-grid, sans-serif
+			font-weight: normal
+		
+			z-index: 7
+		span
+			z-index: 6
+			font-size: 0.8em
+			
+	// 		padding-left: 1em
+	// .header-content
+		
+	// 	background-size: cover
+	// 	background-position: center center
+	// 	position: relative
+	// 	text-align: center
+	// 	display: grid
+	// 	grid-template-columns: 1fr
+	// 	grid-template-rows: auto
+	
+	// 	margin-left: 4em
+	// 	@media only screen   and (max-width : 480px) 
+	// 		margin-left: 2px
+	// 	margin-right: 4em
+	// 	@media only screen   and (max-width : 480px) 
+	// 		margin-right: 2px
+	// 	padding-bottom: 2em
+	// 	padding: 0
+	// 	height: 120%
+	// 	@media only screen   and (max-width : 480px) 
+	// 		height: 130%
+	
+	// 	color: #eeeeee
+	
+	// 	img
+	// 		height: auto
+
+	// 	h1
+			
+	// 		font-size: 1.6em
+	// 		@media only screen   and (max-width : 480px) 
+	// 			font-size: 1.2em
+	// 		font-family: into-grid, sans-serif
+	// 		font-weight: normal
+		
+	// 		z-index: 7
+	// 	span
+	// 		z-index: 6
+	// 		font-size: 0.8em
+			
+	// 		padding-left: 1em
+
+	.contentnt-producya
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 10px
+		padding-right: 10px
+		padding-bottom: 2em
+	.company
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 10px
+		padding-right: 10px
+	.blue-block
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 10px
+		padding-right: 10px
+	.company
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 10px
+		padding-right: 10px
+	.companion
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 10px
+		padding-right: 10px
+		grid-template-columns: 250px 250px
+		@media only screen   and (max-width : 480px) 
+			grid-template-columns: 300px
+		justify-items: center
+		justify-content: center
+		text-align: center
+		grid-gap: 3px
+	.map
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 0px
+		padding-right: 0px
+		.karta
+			padding-left: 0
+	.formsection
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 0px
+		padding-right: 0px
+		.footer
+			grid-template-columns: 320px
+			justify-content: center
+			// grid-template-rows: 100px 
+			form
+				grid-column: 1
+				grid-row: 3
+				width: 100%
+	   
+	.main-header
+		
+		min-height: 100vh
+		// width: 100%
+		max-width: 100%
+		min-width: 100%
+		background-size: cover
+		background-position: center
+		position: relative
+		grid-auto-rows: 200px
+		padding: 1px
+		// justify-content: center
+		// align-content: stretch
+		// align-content: center
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			background-color: $dark
+			opacity: 0.64
+		
+		display: grid    
+		grid-template-columns: 1fr
+
+@media only screen  and (min-width : 768px) 
+	.contentnt-producya	
+		margin-top: -2em
+		padding-left: 2em
+		padding-right: 2em
+		padding-top: 1vh
+		// padding-bottom: 1vh
+		padding-bottom: 2em
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
+	.fixheader
+		
+		img
+			//  
+			background-position: center center
+			background-size: cover
+			height: 8em
+			width: 14em
+			padding-left: 0
+			justify-content: center
+		.menu
+			visibility: visible
+			
+					// text-decoration-line: 
+		.menu-toggle
+			visibility: hidden
+			
+
+	.telefon
+		margin-top: 3.6em
+		font-size: 28px
+	.fixheader1
+		padding-left: 0
+	// .header-content
+		
+	// 	background-size: cover
+	// 	background-position: center center
+	// 	position: relative
+	// 	text-align: center
+	// 	display: grid
+	// 	grid-template-columns: 1fr
+	// 	grid-template-rows: auto
+	
+	// 	margin-left: 4em
+		
+	// 	margin-right: 4em
+		
+	// 	padding-bottom: 2em
+	// 	padding: 1em
+	// 	height: 120%
+	
+	// 	color: #eeeeee
+
+	// 	img
+	// 		height: auto
+
+	// 	h1
+			
+	// 		font-size: 1.8em
+	// 		@media only screen   and (max-width : 480px) 
+	// 			font-size: 1.2em
+	// 		font-family: into-grid, sans-serif
+	// 		font-weight: normal
+	
+	// 		z-index: 7
+	// 	span
+	// 		z-index: 6
+	// 		font-size: 1em
+			
+	// 		padding-left: 1em
+		
+	.contentnt-producya
+		margin-left: 15px
+		margin-right: 15px
+		padding-left: 10px
+		padding-right: 10px
+	.company
+		margin-left: 15px
+		margin-right: 15px
+		padding-left: 10px
+		padding-right: 10px
+	.blue-block
+		margin-left: 15px
+		margin-right: 15px
+		padding-left: 10px
+		padding-right: 10px
+	.company
+		margin-left: 15px
+		margin-right: 15px
+		padding-left: 10px
+		padding-right: 10px
+	.companion
+		margin-left: 15px
+		margin-right: 15px
+		padding-left: 10px
+		padding-right: 10px
+		grid-template-columns: 250px 250px 250px
+		@media only screen   and (max-width : 480px) 
+			grid-template-columns: 300px
+		justify-items: center
+		justify-content: center
+		text-align: center
+		grid-gap: 3px
+	.map
+		margin-left: 2px
+		margin-right: 2px
+		padding-left: 0px
+		padding-right: 0px
+		.karta
+			padding-left: 0
+	
+	   
+	.main-header
+		
+		min-height: 100vh
+		// width: 100%
+		max-width: 100%
+		min-width: 100%
+		background-size: cover
+		background-position: center
+		position: relative
+		grid-auto-rows: 200px
+		padding: 1px
+		// justify-content: center
+		// align-content: stretch
+		// align-content: center
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			background-color: $dark
+			opacity: 0.64
+		
+		display: grid    
+		grid-template-columns: 1fr
+
+// @media only screen  and (min-width :  992px) 
+	// .header-content
+		
+	// 	background-size: cover
+	// 	background-position: center center
+	// 	position: relative
+	// 	text-align: center
+	// 	display: grid
+	// 	grid-template-columns: 1fr
+	// 	grid-template-rows: auto
+
+	// 	margin-left: 17em
+		
+	// 	margin-right: 14em
+		
+	// 	padding-bottom: 2em
+	// 	padding: 1em
+	// 	height: 110%
+
+	// 	color: #eeeeee
+
+	// 	img
+	// 		height: auto
+
+	// 	h1
+			
+	// 		font-size: 1.8em
+	// 		@media only screen   and (max-width : 480px) 
+	// 			font-size: 1.2em
+	// 		font-family: into-grid, sans-serif
+	// 		font-weight: normal
+
+	// 		z-index: 7
+	// 	span
+	// 		z-index: 6
+	// 		font-size: 1em
+			
+	// 		padding-left: 1em
+
+// @media only screen and (width :  926px)   and (min-width :  1024px) 
+	// .header-content
+		
+	// 	background-size: cover
+	// 	background-position: center center
+	// 	position: relative
+	// 	text-align: center
+	// 	display: grid
+	// 	grid-template-columns: 1fr
+	// 	grid-template-rows: auto
+
+	// 	margin-left: 12em
+		
+	// 	margin-right: 12em
+		
+	// 	padding-bottom: 2em
+	// 	padding: 1em
+	// 	height: 110%
+
+	// 	color: #eeeeee
+
+	// 	img
+	// 		height: auto
+
+	// 	h1
+			
+	// 		font-size: 1.8em
+	// 		@media only screen   and (max-width : 480px) 
+	// 			font-size: 1.2em
+	// 		font-family: into-grid, sans-serif
+	// 		font-weight: normal
+	
+	// 		z-index: 7
+	// 	span
+	// 		z-index: 6
+	// 		font-size: 1em
+			
+	// 		padding-left: 1em
+
+// @media only screen  and (width :  1024px) and (min-width :  1024px) 
+	// .header-content
+		
+	// 	background-size: cover
+	// 	background-position: center center
+	// 	position: relative
+	// 	text-align: center
+	// 	display: grid
+	// 	grid-template-columns: 1fr
+	// 	grid-template-rows: auto
+	
+	// 	margin-left: 2%
+		
+	// 	margin-right: 2%
+		
+	// 	padding-bottom: 2em
+	// 	padding: 1em
+	// 	height: 110%
+
+	// 	color: #eeeeee
+
+	// 	img
+	// 		height: auto
+
+	// 	h1
+			
+	// 		font-size: 1.8em
+	// 		@media only screen   and (max-width : 480px) 
+	// 			font-size: 1.2em
+	// 		font-family: into-grid, sans-serif
+	// 		font-weight: normal
+
+	// 		z-index: 7
+	// 	span
+	// 		z-index: 6
+	// 		font-size: 1em
+			
+	// 		padding-left: 1em
+	
