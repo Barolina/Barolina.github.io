@@ -980,7 +980,7 @@ body {
   margin-right: 3em;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 1vh;
+  padding-bottom: 2em;
   text-align: center;
   grid-gap: 1vh;
   grid-template-columns: 1fr; }
@@ -1007,9 +1007,11 @@ body {
     cursor: pointer; }
     .contentnt-producya .element span {
       color: #2a3137;
-      font-size: 18px;
+      font-size: 1em;
+      font-weight: 400;
       line-height: 18px;
-      text-align: center; }
+      text-align: center;
+      font-family: Georgia; }
     .contentnt-producya .element:hover {
       background: url("../img/bg-element.png") no-repeat center;
       background-position: center center;
@@ -1400,36 +1402,36 @@ hr {
     justify-items: center; }
 
 .header-content {
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-position: center center;
-  position: relative;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-row-gap: 1em;
-  margin-left: 16em;
-  margin-right: 14em;
-  padding-bottom: 2em;
-  height: 110%;
-  padding-left: 2em;
-  padding-right: 2em;
-  color: #eeeeee;
-  margin-top: 3em; }
-  .header-content img {
-    height: auto; }
-  .header-content h1 {
-    font-size: 2em;
-    font-family: into-grid, sans-serif;
-    font-weight: normal;
-    line-height: 1.5;
-    z-index: 7; }
-  .header-content span {
-    z-index: 6;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 3em; }
+  text-align: center; }
+  .header-content .cont {
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    justify-self: center;
+    min-height: 100%;
+    max-width: 45em;
+    padding-top: 0;
+    padding-bottom: 6em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: #eeeeee;
+    margin-top: 3em; }
+    .header-content .cont img {
+      height: auto; }
+    .header-content .cont h1 {
+      font-size: 2em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: normal;
+      line-height: 1.1;
+      z-index: 7; }
+    .header-content .cont span {
+      z-index: 6;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-bottom: 3em; }
 
 @media only screen and (max-width: 768px) {
   .contentnt-producya {
@@ -1539,53 +1541,25 @@ hr {
   .telefon {
     margin-top: 3.3em;
     font-size: 28px; }
-  .header-content {
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: center center;
-    position: relative;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-left: 4em;
-    margin-right: 4em;
-    padding-bottom: 2em;
-    padding: 0;
-    height: 120%;
-    color: #eeeeee; } }
+  .cont h1 {
+    font-size: 1.6em;
+    font-family: into-grid, sans-serif;
+    font-weight: normal;
+    z-index: 7; } }
   @media only screen and (max-width: 768px) and (max-width: 480px) {
-    .header-content {
-      margin-left: 2px; } }
-  @media only screen and (max-width: 768px) and (max-width: 480px) {
-    .header-content {
-      margin-right: 2px; } }
-  @media only screen and (max-width: 768px) and (max-width: 480px) {
-    .header-content {
-      height: 130%; } }
+    .cont h1 {
+      font-size: 1.2em; } }
 
 @media only screen and (max-width: 768px) {
-    .header-content img {
-      height: auto; }
-    .header-content h1 {
-      font-size: 1.6em;
-      font-family: into-grid, sans-serif;
-      font-weight: normal;
-      z-index: 7; } }
-    @media only screen and (max-width: 768px) and (max-width: 480px) {
-      .header-content h1 {
-        font-size: 1.2em; } }
-
-@media only screen and (max-width: 768px) {
-    .header-content span {
-      z-index: 6;
-      font-size: 0.8em;
-      padding-left: 1em; }
+  .cont span {
+    z-index: 6;
+    font-size: 0.8em; }
   .contentnt-producya {
     margin-left: 2px;
     margin-right: 2px;
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    padding-bottom: 2em; }
   .company {
     margin-left: 2px;
     margin-right: 2px;
@@ -1669,7 +1643,7 @@ hr {
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
   .fixheader img {
     background-position: center center;
@@ -1691,37 +1665,6 @@ hr {
     font-size: 28px; }
   .fixheader1 {
     padding-left: 0; }
-  .header-content {
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: center center;
-    position: relative;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-left: 4em;
-    margin-right: 4em;
-    padding-bottom: 2em;
-    padding: 1em;
-    height: 120%;
-    color: #eeeeee; }
-    .header-content img {
-      height: auto; }
-    .header-content h1 {
-      font-size: 1.8em;
-      font-family: into-grid, sans-serif;
-      font-weight: normal;
-      z-index: 7; } }
-    @media only screen and (min-width: 768px) and (max-width: 480px) {
-      .header-content h1 {
-        font-size: 1.2em; } }
-
-@media only screen and (min-width: 768px) {
-    .header-content span {
-      z-index: 6;
-      font-size: 1em;
-      padding-left: 1em; }
   .contentnt-producya {
     margin-left: 15px;
     margin-right: 15px;
@@ -1788,102 +1731,3 @@ hr {
       left: 0;
       background-color: #293A43;
       opacity: 0.64; } }
-
-@media only screen and (min-width: 992px) {
-  .header-content {
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: center center;
-    position: relative;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-left: 17em;
-    margin-right: 14em;
-    padding-bottom: 2em;
-    padding: 1em;
-    height: 110%;
-    color: #eeeeee; }
-    .header-content img {
-      height: auto; }
-    .header-content h1 {
-      font-size: 1.8em;
-      font-family: into-grid, sans-serif;
-      font-weight: normal;
-      z-index: 7; } }
-    @media only screen and (min-width: 992px) and (max-width: 480px) {
-      .header-content h1 {
-        font-size: 1.2em; } }
-
-@media only screen and (min-width: 992px) {
-    .header-content span {
-      z-index: 6;
-      font-size: 1em;
-      padding-left: 1em; } }
-
-@media only screen and (width: 926px) and (min-width: 1024px) {
-  .header-content {
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: center center;
-    position: relative;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-left: 12em;
-    margin-right: 12em;
-    padding-bottom: 2em;
-    padding: 1em;
-    height: 110%;
-    color: #eeeeee; }
-    .header-content img {
-      height: auto; }
-    .header-content h1 {
-      font-size: 1.8em;
-      font-family: into-grid, sans-serif;
-      font-weight: normal;
-      z-index: 7; } }
-    @media only screen and (width: 926px) and (min-width: 1024px) and (max-width: 480px) {
-      .header-content h1 {
-        font-size: 1.2em; } }
-
-@media only screen and (width: 926px) and (min-width: 1024px) {
-    .header-content span {
-      z-index: 6;
-      font-size: 1em;
-      padding-left: 1em; } }
-
-@media only screen and (width: 1024px) and (min-width: 1024px) {
-  .header-content {
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: center center;
-    position: relative;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-bottom: 2em;
-    padding: 1em;
-    height: 110%;
-    color: #eeeeee; }
-    .header-content img {
-      height: auto; }
-    .header-content h1 {
-      font-size: 1.8em;
-      font-family: into-grid, sans-serif;
-      font-weight: normal;
-      z-index: 7; } }
-    @media only screen and (width: 1024px) and (min-width: 1024px) and (max-width: 480px) {
-      .header-content h1 {
-        font-size: 1.2em; } }
-
-@media only screen and (width: 1024px) and (min-width: 1024px) {
-    .header-content span {
-      z-index: 6;
-      font-size: 1em;
-      padding-left: 1em; } }
