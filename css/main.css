@@ -1429,9 +1429,10 @@ hr {
       z-index: 7; }
     .header-content .cont span {
       z-index: 6;
+      padding-top: 1em;
       padding-left: 1em;
       padding-right: 1em;
-      padding-bottom: 3em; }
+      padding-bottom: 4em; }
 
 @media only screen and (max-width: 768px) {
   .contentnt-producya {
