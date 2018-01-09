@@ -12,6 +12,11 @@ def _index(request):
     return HttpResponse('est')
 
 class index(ListView):
-    queryset = NNGModel.objects.all()
+    queryset = NNGModel.objects.first()
     template_name = 'index.html'
     context_object_name = 'obj'
+
+    def get_queryset(self):
+        # res = super(index,self).get_queryset(self)
+        print(self.queryset)
+        return self.queryset

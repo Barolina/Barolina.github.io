@@ -104,15 +104,14 @@
 
 <body>
 	
-	<header class="main-header grid" id="index" style="background-image: url('img/fong.png');">
+	<header class="main-header grid" id="index" style="background-image: url('{{ STATIC_URL  }}/static/img/fong.png');">
 		<div class="fixheader1">
-				
-						<span>{{  obj.address  }} &nbsp &nbsp nng-consulting@mail.ru &nbsp &nbsp  +7 (985) 648 6201  &nbsp  +7 930 409 2323</span>
+						<span>&nbsp &nbsp{{  obj.address  }} &nbsp &nbsp nng-consulting@mail.ru &nbsp &nbsp  {{ obj.telefons }}</span>
 			
 		</div>		
 		<div class="fixheader">
 			
-			<a href="#index"><img src="img/rectangle_header.png" alt="NNG Concalting"></a>
+			<a href="#index"><img src="{{ STATIC_URL  }}/static/img/rectangle_header.png" alt="NNG Concalting"></a>
 			<div class="menu grid">
 				<a href="#company" class="menu-link">КОМПАНИЯ</a>
 				<a href="#paractiki" class="menu-link">ПРАКТИКИ</a>
@@ -139,7 +138,7 @@
 				+7 (930) 409 2323
 		</div>	
 		<div class="header-content  wow slideInDown" > 
-			<div class="cont" style="background-image: url('img/fon-content.png');">
+			<div class="cont" style="background-image: url('{{ STATIC_URL  }}/static/img/fon-content.png');">
 
 			<span><h1>«Нестругин, Неврюев, Горлов и Партнёры»</h1></span>
 			<span>предоставляем полный спектр правовых услуг, защищаем интересы наших Заказчиков в Черноземье, Московском и многих других регионах Российской Федерации.
@@ -154,7 +153,7 @@
 		</div>
 	</header>
 
-	<div class="contentnt-producya grid " id="paractiki" style="background-image: url('img/bg-produkcya.png');">
+	<div class="contentnt-producya grid " id="paractiki" style="background-image: url('{{ STATIC_URL  }}/static/img/bg-produkcya.png');">
 		<span>Практики</span>
 		<div class="element animated fadeInUp delay-05s"><span>корпоративное право</span></div>
 		<div class="element"><span>коммерческое право</span></div>
@@ -214,8 +213,8 @@
 		</div>
 	</div>
 
-	<div class="blue-block geografy wow fadeInDown" id="geografy" style="background-image: url('img/geografy.png');" >
-		<div class="karta" style="background-image: url('img/karta.png');" >
+	<div class="blue-block geografy wow fadeInDown" id="geografy" style="background-image: url('{{ STATIC_URL  }}/static/img/geografy.png');" >
+		<div class="karta" style="background-image: url('{{ STATIC_URL  }}/static/img/karta.png');" >
 				<h1 class="block-h1">
 						ГЕОГРАФИЯ УСЛУГ
 				</h1>
@@ -240,17 +239,17 @@
 	<div class="company animated fadeInUp delay-05s" id="analitika">
 		<h1 class="block-h1">АНАЛИТИКА И АКТУАЛЬНАЯ ИНФОРМАЦИЯ</h1>
 		<div class="companion">
-			<img src="img/1e.png"/>
-			<img src="img/3e.png"/>
-			<img src="img/4e.png"/>
-			<img src="img/5e.png"/>
-			<img src="img/6e.png"/>
-			<img src="img/2e.png"/>
+			<img src="{{ STATIC_URL  }}/static/img/1e.png"/>
+			<img src="{{ STATIC_URL  }}/static/img/3e.png"/>
+			<img src="{{ STATIC_URL  }}/static/img/4e.png"/>
+			<img src="{{ STATIC_URL  }}/static/img/5e.png"/>
+			<img src="{{ STATIC_URL  }}/static/img/6e.png"/>
+			<img src="{{ STATIC_URL  }}/static/img/2e.png"/>
 			
 		</div>
 	</div>
 
-	<div class="blue-block vakanci wow fadeInDown" style="background-image: url('img/geografy.png');">
+	<div class="blue-block vakanci wow fadeInDown" style="background-image: url('{{ STATIC_URL  }}/static/img/geografy.png');">
 		
 				<h1 class="block-h1">
 						ВАКАНСИИ
@@ -298,11 +297,11 @@
 	<section class="formsection">
 			<div class="footer">
 					<!-- <div class="data"> -->
-						<img src="img/logo-footer.png"/>
+						<img src="{{ STATIC_URL  }}/static/img/logo-footer.png"/>
 						<div class="data">
-							<span><img src="img/mail.png" style="width:20px; height:20px">nng-consulting@mail.ru</span>
-							<span><img src="img/phone.png" style="width:20px; height:20px">Тел.: +7 (985) 648 6201 </span>
-							<span><img src="img/phone.png" style="width:20px; height:20px">Тел.: +7 (930) 409 2323 </span>
+							<span><img src="{{ STATIC_URL  }}/static/img/mail.png" style="width:20px; height:20px">nng-consulting@mail.ru</span>
+							<span><img src="{{ STATIC_URL  }}/static/img/phone.png" style="width:20px; height:20px">Тел.: +7 (985) 648 6201 </span>
+							<span><img src="{{ STATIC_URL  }}/static/img/phone.png" style="width:20px; height:20px">Тел.: +7 (930) 409 2323 </span>
 						
 						</div>
 						
@@ -320,9 +319,9 @@
 			
 	</section>
 	
-	<link rel="stylesheet" href="css/main.css">
-	<script src="{% static 'js/scripts.min.js' %}"></script>
-	<script src="js/jquery.waypoints.js"></script>
+	<link rel="stylesheet" href="{{ STATIC_URL  }}/static/css/main.css">
+	<script src="{{ STATIC_URL  }}/static/js/scripts.min.js"></script>
+	<script src="{{ STATIC_URL  }}/static/js/jquery.waypoints.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script>
 		jQuery(function(f){
